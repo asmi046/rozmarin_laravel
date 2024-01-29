@@ -4,14 +4,16 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
-use Illuminate\Database\Eloquent\Model;
 use App\Models\Service;
-
-use MoonShine\Resources\ModelResource;
-use MoonShine\Decorations\Block;
 use MoonShine\Fields\ID;
+
 use MoonShine\Fields\Text;
+use MoonShine\Fields\Color;
 use MoonShine\Fields\TinyMce;
+use MoonShine\Decorations\Block;
+use MoonShine\Resources\ModelResource;
+use Illuminate\Database\Eloquent\Model;
+
 
 class ServiceResource extends ModelResource
 {

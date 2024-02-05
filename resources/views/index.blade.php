@@ -1,0 +1,156 @@
+
+@extends('layouts.all')
+
+@php
+    $title = "Заголовок";
+    $description = "Дескрипшен";
+    $pageTitle = "Презентация региона"
+
+@endphp
+
+@section('title', $title)
+@section('description', $description)
+
+@section('main')
+    <section class="hall-section">
+        <img src="{{asset('img/hall-decor-img.png')}}" class="hall-section__decor-img hall-section__decor-img--left" aria-hidden="true" alt="">
+        <img src="{{asset('img/hall-decor-img.png')}}" class="hall-section__decor-img hall-section__decor-img--right" aria-hidden="true" alt="">
+        <div class="inner">
+            <div class="f-img-box">
+                <img src="{{asset('img/f-img-4.png')}}" alt="" class="f-img-4">
+                <img src="{{asset('img/f-img-3.png')}}" alt="" class="f-img-3">
+                <img src="{{asset('img/f-img-2.png')}}" alt="" class="f-img-2">
+                <img src="{{asset('img/f-img-1.png')}}" alt="" class="f-img-1">
+            </div>
+            <div class="hall__phone-box">
+                <a href="tel:+79606905951" class="hall__phone">+7 960 690 59 51</a>
+                <a href="tel:+79191707507" class="hall__phone">+7 919 170 75 07</a>
+            </div>
+            <h1 class="page-title">Студия ландшафтного дизайна</h1>
+            <button class="btn">Получить консультацию</button>
+        </div>
+        <div class="inner about-box">
+            <div class="about-box__left-col">
+                <h2 class="section-title">О компании</h2>
+                <p class="subtitle">ландшафтные проекты любой сложности</p>
+                <p>
+                    Давайте знакомиться, меня зовут Марина Шабанова, я - Ваш ландшафтный дизайнер и руководитель ландшафтной студии "Розмарин".
+                </p>
+                <a href="#" class="btn">Подробнее</a>
+            </div>
+            <div class="about-box__right-col">
+                <div class="ld-img-box">
+                    <img src="{{asset('img/lg-img-1.svg')}}" alt="" class="ld-img-1">
+                    <img src="{{asset('img/lg-img-2.svg')}}" alt="" class="ld-img-2">
+                    <img src="{{asset('img/ld.png')}}" alt="" class="ld-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-section" id="services">
+        <img src="{{asset('img/services-decor-img.png')}}" class="services-section__decor-img services-section__decor-img--left" aria-hidden="true" alt="">
+        <img src="{{asset('img/services-decor-img.png')}}" class="services-section__decor-img services-section__decor-img--right" aria-hidden="true" alt="">
+        <div class="inner">
+            <h2 class="section-title">
+                Услуги
+            </h2>
+            <div class="services-box">
+                <a href="{{route('serviceDetail')}}" class="service">
+                    <img src="{{asset('img/service-img-1.jpg')}}" alt="" class="service__img">
+                    <span class="service__caption">Ландшафтное проектирование и 3D визуализация</span>
+                </a>
+                <a href="#" class="service">
+                    <img src="{{asset('img/service-img-2.jpg')}}" alt="" class="service__img">
+                    <span class="service__caption">Благоустройство и озеленение</span>
+                </a>
+                <a href="#" class="service">
+                    <img src="{{asset('img/service-img-3.jpg')}}" alt="" class="service__img">
+                    <span class="service__caption">Комплексный профессиональный уход за садом</span>
+                </a>
+                <a href="#" class="service">
+                    <img src="{{asset('img/service-img-4.jpg')}}" alt="" class="service__img">
+                    <span class="service__caption">Инженерные системы</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="our-works-section" id="our-works">
+        <div class="inner">
+            <h2 class="section-title">Наши работы</h2>
+            <div class="our-works-box lightgallery-box">
+                <div class="our-work" data-src="{{asset('img/ow-1.jpg')}}">
+                    <img src="{{asset('img/ow-1.jpg')}}" alt="" class="lightgallery">
+                </div>
+                <div class="our-work" data-src="{{asset('img/ow-2.jpg')}}">
+                    <img src="{{asset('img/ow-2.jpg')}}" alt="" class="lightgallery">
+                </div>
+                <div class="our-work" data-src="{{asset('img/ow-3.jpg')}}">
+                    <img src="{{asset('img/ow-3.jpg')}}" alt="" class="lightgallery">
+                </div>
+                <div class="our-work" data-src="{{asset('img/ow-4.jpg')}}">
+                    <img src="{{asset('img/ow-4.jpg')}}" alt="" class="lightgallery">
+                </div>
+                <div class="our-work" data-src="{{asset('img/ow-5.jpg')}}">
+                    <img src="{{asset('img/ow-5.jpg')}}" alt="" class="lightgallery">
+                </div>
+                <div class="our-work " data-src="{{asset('img/ow-6.jpg')}}">
+                    <img src="{{asset('img/ow-6.jpg')}}" alt="" class="lightgallery">
+                </div>
+                <div class="our-work" data-src="{{asset('img/ow-7.jpg')}}">
+                    <img src="{{asset('img/ow-7.jpg')}}" alt="" class="lightgallery">
+                </div>
+                <div class="our-work" data-src="{{asset('img/ow-8.jpg')}}" data-lg-id="1">
+                    <img src="{{asset('img/ow-8.jpg')}}" alt="" class="lightgallery">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contacts">
+        <div class="inner">
+            <h2 class="section-title">Контакты</h2>
+            <p class="subtitle">Мы оперативно ответим на любые ваши вопросы</p>
+            <div class="contacts">
+                <div class="contacts__left-col">
+                    <ul class="contact-list">
+                        <li>
+                            +7 960 690 59 51
+                        </li>
+                        <li>
+                            +7 919 170 75 07
+                        </li>
+                        <li>
+                            <a href="mailto:landshaft.rosmarin@gmail.com">landshaft.rosmarin@gmail.com</a>
+                        </li>
+                    </ul>
+                    <div class="social-link-box">
+                        <a href="https://vk.com/club211378898" class="social-link social-link--vk">ВК</a>
+                        <a href="https://vk.com/club211378898" class="social-link social-link--instagram">ВК</a>
+                    </div>
+                </div>
+                <div class="contacts__right-col">
+                    <form class="callback-form">
+                        <label class="form-elem">
+                            <input type="email" name="email" class="form-elem__field" placeholder="Ваш Email">
+                            {{-- <span class="form-elem__error">ошибка вашу дивизию</span> --}}
+                        </label>
+                        <label class="form-elem">
+                            <input type="tel" name="tel" class="form-elem__field tel-mask" placeholder="Ваш телефон">
+                            {{-- <span class="form-elem__error">ошибка вашу дивизию</span> --}}
+                        </label>
+                        <label class="form-elem">
+                            <input type="text" name="name" class="form-elem__field" placeholder="Ваше имя">
+                            {{-- <span class="form-elem__error">ошибка вашу дивизию</span> --}}
+                        </label>
+                        <label class="form-elem">
+                            <textarea name="query" id="" cols="30" rows="10" class="form-elem__textarea" placeholder="Ваш вопрос"></textarea>
+                            {{-- <span class="form-elem__error">ошибка вашу дивизию</span> --}}
+                        </label>
+                        <button type="submit" class="btn">Отправить</button>
+                        <span class="form-notification">Нажимая на кнопку “отправить заявку” вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+@endsection

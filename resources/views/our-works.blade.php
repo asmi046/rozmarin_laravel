@@ -19,7 +19,7 @@
     </div>
     <section class="our-work-page">
         <div class="inner">
-            <h1 class="page-title">О компании</h1>
+            <h1 class="page-title">Портфолио</h1>
             <div class="our-works-box">
                 <div class="our-work">
                     <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-1.jpg')}}">

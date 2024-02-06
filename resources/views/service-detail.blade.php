@@ -11,6 +11,12 @@
 @section('title', $title)
 @section('description', $description)
 @section('main')
+    <div class="inner">
+        <ul class="breadcrumbs">
+            <li><a href="/">Главная</a> <i>/</i></li>
+            <li><span>Ландшафтное проектирование и 3D визуализация</span></li>
+        </ul>
+    </div>
     <section class="service-detail-page content-page">
         <div class="inner">
             <h1 class="page-title">

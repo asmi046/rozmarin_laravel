@@ -12,7 +12,7 @@
                     <a href="./#services">Услуги</a>
                 </li>
                 <li>
-                    <a href="./#our-works">Портфолио</a>
+                    <a href="{{route('ourWorks')}}">Портфолио</a>
                 </li>
                 <li>
                     <a href="./#contacts">Контакты</a>

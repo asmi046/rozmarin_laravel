@@ -22,6 +22,11 @@
             display: none;
         }
     }
+    .about-content {
+        p {
+            font-size: 1.6rem;
+        }
+    }
 }
 @media screen and (max-width: 880px){
     .hall-section {
@@ -56,7 +61,25 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+@media screen and (max-width: 800px){
+    .about-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 6rem;
+        .about-content__left-col{
+            width: 100%;
+        }
+        .about-content__right-col{
+            width: 100%;
+        }
+    }
+    .about-page{
+        .ld-img-box{
+            margin: 0 auto;
+        }
+    }
+}
 @media screen and (max-width: 600px){
     :root{
         font-size: 9px;

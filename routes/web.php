@@ -17,3 +17,4 @@ use App\Http\Controllers\IndexController;
 Route::get('/', [IndexController::class, "index"])->name('home');
 Route::get('/about', [IndexController::class, "about"])->name('about');
 Route::get('/service-detail', [IndexController::class, "serviceDetail"])->name('serviceDetail');
+Route::get('/our-works', [IndexController::class, "ourWorks"])->name('ourWorks');

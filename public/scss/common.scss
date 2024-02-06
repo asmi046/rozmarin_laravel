@@ -240,7 +240,6 @@ h2, .h2{
 }
 .about-page{
     .ld-img-box{
-        margin: 0 auto;
         margin-bottom: 10rem;
         width: 70%;
         max-width: 34rem;
@@ -254,6 +253,19 @@ h2, .h2{
     h2{
         margin-top: 4rem;
         margin-bottom: 3rem;
+    }
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    .about-content__left-col{
+        width: 45%;
+    }
+    .about-content__right-col{
+        width: 55%;
+    }
+    p{
+        font-size: 1.8rem;
     }
 }
 
@@ -306,5 +318,30 @@ h2, .h2{
         object-position: center center;
         width: 100%;
         height: auto;
+    }
+}
+.link-to{
+    display: block;
+    width: fit-content;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: var(--black);
+
+}
+.breadcrumbs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+    list-style-type: none;
+    li{
+        display: flex;
+        gap: 5px;
+        span, a, i{
+            font-size: 1.4rem;
+            color: var(--grey);
+        }
     }
 }

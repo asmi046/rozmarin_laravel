@@ -75,34 +75,71 @@
         </div>
     </section>
     <section class="our-works-section" id="our-works">
-        <div class="inner">
+        <div class="inner clearfix">
             <h2 class="section-title">Наши работы</h2>
-            <div class="our-works-box lightgallery-box">
-                <div class="our-work" data-src="{{asset('img/ow-1.jpg')}}">
-                    <img src="{{asset('img/ow-1.jpg')}}" alt="" class="lightgallery">
+            <div class="our-works-box">
+                <div class="our-work">
+                    <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-1.jpg')}}">
+                        <img src="{{asset('img/ow-1.jpg')}}" alt="" class="lightgallery">
+                        <span class="our-work__marker">Частные участки</span>
+                    </div>
+                    <div class="our-work__text">
+                        <span class="our-work__name">Пример названия</span>
+                        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
+                    </div>
                 </div>
-                <div class="our-work" data-src="{{asset('img/ow-2.jpg')}}">
-                    <img src="{{asset('img/ow-2.jpg')}}" alt="" class="lightgallery">
+                <div class="our-work">
+                    <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-2.jpg')}}">
+                        <img src="{{asset('img/ow-2.jpg')}}" alt="" class="lightgallery">
+                        <span class="our-work__marker">Частные участки</span>
+                    </div>
+                    <div class="our-work__text">
+                        <span class="our-work__name">Пример длинного названия   </span>
+                        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
+                    </div>
                 </div>
-                <div class="our-work" data-src="{{asset('img/ow-3.jpg')}}">
-                    <img src="{{asset('img/ow-3.jpg')}}" alt="" class="lightgallery">
+                <div class="our-work">
+                    <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-3.jpg')}}">
+                        <img src="{{asset('img/ow-3.jpg')}}" alt="" class="lightgallery">
+                        <span class="our-work__marker">Частные участки</span>
+                    </div>
+                    <div class="our-work__text">
+                        <span class="our-work__name">Пример очень неожиданно длинного названия   </span>
+                        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
+                    </div>
                 </div>
-                <div class="our-work" data-src="{{asset('img/ow-4.jpg')}}">
-                    <img src="{{asset('img/ow-4.jpg')}}" alt="" class="lightgallery">
+                <div class="our-work">
+                    <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-4.jpg')}}">
+                        <img src="{{asset('img/ow-4.jpg')}}" alt="" class="lightgallery">
+                        <span class="our-work__marker">Частные участки</span>
+                    </div>
+                    <div class="our-work__text">
+                        <span class="our-work__name">Пример названия</span>
+                        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
+                    </div>
                 </div>
-                <div class="our-work" data-src="{{asset('img/ow-5.jpg')}}">
-                    <img src="{{asset('img/ow-5.jpg')}}" alt="" class="lightgallery">
+                <div class="our-work">
+                    <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-5.jpg')}}">
+                        <img src="{{asset('img/ow-5.jpg')}}" alt="" class="lightgallery">
+                        <span class="our-work__marker">Частные участки</span>
+                    </div>
+                    <div class="our-work__text">
+                        <span class="our-work__name">Пример названия</span>
+                        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
+                    </div>
                 </div>
-                <div class="our-work " data-src="{{asset('img/ow-6.jpg')}}">
-                    <img src="{{asset('img/ow-6.jpg')}}" alt="" class="lightgallery">
-                </div>
-                <div class="our-work" data-src="{{asset('img/ow-7.jpg')}}">
-                    <img src="{{asset('img/ow-7.jpg')}}" alt="" class="lightgallery">
-                </div>
-                <div class="our-work" data-src="{{asset('img/ow-8.jpg')}}" data-lg-id="1">
-                    <img src="{{asset('img/ow-8.jpg')}}" alt="" class="lightgallery">
+                <div class="our-work">
+                    <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-6.jpg')}}">
+                        <img src="{{asset('img/ow-6.jpg')}}" alt="" class="lightgallery">
+                        <span class="our-work__marker">Казенные участки</span>
+                    </div>
+                    <div class="our-work__text">
+                        <span class="our-work__name">Пример названия</span>
+                        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
+                    </div>
                 </div>
             </div>
+            <a href="{{route('ourWorks')}}" class="link-to">Смотреть все примеры работ</a>
         </div>
     </section>
     <section class="contact-section" id="contacts">

@@ -17,10 +17,10 @@
         <img src="{{asset('img/hall-decor-img.png')}}" class="hall-section__decor-img hall-section__decor-img--right" aria-hidden="true" alt="">
         <div class="inner">
             <div class="f-img-box">
-                <img src="{{asset('img/f-img-4.png')}}" alt="" class="f-img-4">
-                <img src="{{asset('img/f-img-3.png')}}" alt="" class="f-img-3">
-                <img src="{{asset('img/f-img-2.png')}}" alt="" class="f-img-2">
-                <img src="{{asset('img/f-img-1.png')}}" alt="" class="f-img-1">
+                <img src="{{asset('img/f-img-4.svg')}}" alt="" class="f-img-4">
+                <img src="{{asset('img/f-img-3.svg')}}" alt="" class="f-img-3">
+                <img src="{{asset('img/f-img-2.svg')}}" alt="" class="f-img-2">
+                <img src="{{asset('img/f-img-1.svg')}}" alt="" class="f-img-1">
             </div>
             <div class="hall__phone-box">
                 <a href="tel:+79606905951" class="hall__phone">+7 960 690 59 51</a>
@@ -57,19 +57,23 @@
             <div class="services-box">
                 <a href="{{route('serviceDetail')}}" class="service">
                     <img src="{{asset('img/service-img-1.jpg')}}" alt="" class="service__img">
-                    <span class="service__caption">Ландшафтное проектирование и 3D визуализация</span>
+                    <span class="service__caption">Консультация дизайнера</span>
                 </a>
                 <a href="#" class="service">
                     <img src="{{asset('img/service-img-2.jpg')}}" alt="" class="service__img">
-                    <span class="service__caption">Благоустройство и озеленение</span>
+                    <span class="service__caption">Проектирование и визуализация</span>
                 </a>
                 <a href="#" class="service">
                     <img src="{{asset('img/service-img-3.jpg')}}" alt="" class="service__img">
-                    <span class="service__caption">Комплексный профессиональный уход за садом</span>
+                    <span class="service__caption">Благоустройство и озеленение</span>
                 </a>
                 <a href="#" class="service">
                     <img src="{{asset('img/service-img-4.jpg')}}" alt="" class="service__img">
-                    <span class="service__caption">Инженерные системы</span>
+                    <span class="service__caption">Уход за садом</span>
+                </a>
+                <a href="#" class="service">
+                    <img src="{{asset('img/service-img-5.jpg')}}" alt="" class="service__img">
+                    <span class="service__caption">Вертикальное озеленение</span>
                 </a>
             </div>
         </div>
@@ -139,7 +143,7 @@
                     </div>
                 </div>
             </div>
-            <a href="{{route('ourWorks')}}" class="link-to">Смотреть все примеры работ</a>
+            <a href="{{route('ourWorks')}}" class="btn">Смотреть все примеры работ</a>
         </div>
     </section>
     <section class="contact-section" id="contacts">

@@ -1,7 +1,7 @@
 <header id="header">
     <div class="inner">
         <a href="/" class="logo">
-            <img src="{{asset('img/logo.png')}}" alt="Логотип">
+            <img src="{{asset('img/logo.svg')}}" alt="Логотип">
         </a>
         <nav>
             <menu class="main-menu">

@@ -2,7 +2,7 @@
 @extends('layouts.all')
 
 @php
-    $title = "Заголовок";
+    $title = "Розмарин - студия ландшафтного дизайна";
     $description = "Дескрипшен";
     $pageTitle = "Презентация региона"
 

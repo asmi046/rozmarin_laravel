@@ -24,7 +24,6 @@
     @vite([
         'resources/css/app.css',
         'public/scss/style.scss',
-        // 'resources/js/lightgallery.min.js',
         'resources/js/app.js'
     ])
 </head>

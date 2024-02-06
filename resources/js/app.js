@@ -1,5 +1,5 @@
 import './bootstrap';
-import './lightgallery.min';
+import './lightgallery.min.js';
 
 import v_script from './v_script';
 

@@ -1,5 +1,6 @@
 import IMask from 'imask';
 import Swiper from 'swiper/bundle';
+import lightGallery from 'lightgallery';
 
 // import styles bundle
 import 'swiper/css/bundle';

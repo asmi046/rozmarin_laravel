@@ -27,7 +27,7 @@
                 <a href="tel:+79191707507" class="hall__phone">+7 919 170 75 07</a>
             </div>
             <h1 class="page-title">Студия ландшафтного дизайна</h1>
-            <button class="btn">Получить консультацию</button>
+            <a href="#contacts" class="btn anchor-link">Получить консультацию</a>
         </div>
         <div class="inner about-box">
             <div class="about-box__left-col">
@@ -36,7 +36,7 @@
                 <p>
                     Давайте знакомиться, меня зовут Марина Шабанова, я - Ваш ландшафтный дизайнер и руководитель ландшафтной студии "Розмарин".
                 </p>
-                <a href="#" class="btn">Подробнее</a>
+                <a href="{{route('about')}}" class="btn">Подробнее</a>
             </div>
             <div class="about-box__right-col">
                 <div class="ld-img-box">

@@ -6,16 +6,16 @@
         <nav>
             <menu class="main-menu">
                 <li>
-                    <a href="{{route('about')}}">О компании</a>
+                    <a href="{{route('about')}}" class="anchor-link">О компании</a>
                 </li>
                 <li>
-                    <a href="./#services">Услуги</a>
+                    <a href="./#services" class="anchor-link">Услуги</a>
                 </li>
                 <li>
-                    <a href="{{route('ourWorks')}}">Портфолио</a>
+                    <a href="{{route('ourWorks')}}" class="anchor-link">Портфолио</a>
                 </li>
                 <li>
-                    <a href="./#contacts">Контакты</a>
+                    <a href="./#contacts" class="anchor-link">Контакты</a>
                 </li>
             </menu>
         </nav>

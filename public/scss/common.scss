@@ -109,6 +109,9 @@ h6, .h6{
         width: 100%;
         height: auto;
         z-index: 4;
+        transition: all 700ms ease-in-out;
+        transform: scale(0.5);
+        opacity: 0;
     }
     .f-img-2{
         position: absolute;
@@ -117,6 +120,9 @@ h6, .h6{
         width: 170%;
         height: auto;
         z-index: 3;
+        transition: all 700ms ease-in-out 400ms;
+        transform: translateX(16%);
+        opacity: 0;
     }
     .f-img-3{
         position: absolute;
@@ -125,6 +131,9 @@ h6, .h6{
         width: 47%;
         height: auto;
         z-index: 2;
+        transition: all 700ms ease-in-out 700ms;
+        transform: translateX(36%);
+        opacity: 0;
     }
     .f-img-4{
         position: absolute;
@@ -133,6 +142,27 @@ h6, .h6{
         width: 180%;
         height: auto;
         z-index: 2;
+        transition: all 700ms ease-in-out 1000ms;
+        transform: translateX(-16%);
+        opacity: 0;
+    }
+    &.start-animation{
+        .f-img-1{
+            transform: scale(1);
+            opacity: 1;
+        }
+        .f-img-2{
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .f-img-3{
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .f-img-4{
+            transform: translateX(0);
+            opacity:1;
+        }
     }
 }
 

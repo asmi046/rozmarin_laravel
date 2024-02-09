@@ -55,7 +55,13 @@
                 Услуги
             </h2>
             <div class="services-box">
-                <a href="{{route('serviceDetail')}}" class="service">
+                @foreach ($all_services as $item)
+                    <a href="#" class="service">
+                        <img src="{{ $item->img }}" alt="{{ $item->title }}" class="service__img">
+                        <span class="service__caption">{{ $item->title }}</span>
+                    </a>
+                @endforeach
+                {{-- <a href="{{route('serviceDetail')}}" class="service">
                     <img src="{{asset('img/service-img-1.jpg')}}" alt="" class="service__img">
                     <span class="service__caption">Консультация дизайнера</span>
                 </a>
@@ -74,7 +80,7 @@
                 <a href="#" class="service">
                     <img src="{{asset('img/service-img-5.jpg')}}" alt="" class="service__img">
                     <span class="service__caption">Вертикальное озеленение</span>
-                </a>
+                </a> --}}
             </div>
         </div>
     </section>

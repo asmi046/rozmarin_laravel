@@ -30,7 +30,6 @@ class ServiceResource extends ModelResource
                 Text::make( 'Заголовок', 'title'),
                 Text::make( 'Slug', 'slug'),
                 TinyMce::make( 'Цитата', 'description', fn($item) => mb_strimwidth($item->description, 0, 60, "..." )),
-
             ]),
         ];
     }

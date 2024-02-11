@@ -376,8 +376,14 @@ h6, .h6{
     font-size: 1.6rem;
     text-decoration: underline;
     color: var(--black);
-
 }
+.uni_breadcrumbs{
+    span, a, i{
+        font-size: 1.4rem;
+        color: var(--grey);
+    }
+}
+
 .breadcrumbs{
     display: flex;
     flex-wrap: wrap;

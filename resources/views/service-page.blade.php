@@ -12,11 +12,9 @@
 @section('description', $description)
 @section('main')
     <div class="inner">
-        <ul class="breadcrumbs">
-            <li><a href="/">Главная</a> <i>/</i></li>
-            <li><span>Ландшафтное проектирование и 3D визуализация</span></li>
-        </ul>
+        <x-breadcrumbs.main :title="$title"></x-breadcrumbs.main>
     </div>
+
     <section class="service-detail-page content-page">
         <div class="inner">
             <h1 class="page-title">

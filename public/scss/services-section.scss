@@ -45,6 +45,7 @@
         object-position: center center;
         box-shadow: 7px 7px 12px 0px rgba(36, 66, 40, 0.6);
         transition: var(--great-transition);
+        filter: sepia(.4);
     }
     .service__caption{
         display: block;
@@ -57,6 +58,10 @@
     &:hover{
         text-decoration: none;
         transform: scale(1.03);
+
+        .service__img{
+            filter: sepia(0);
+        }
     }
 }
 

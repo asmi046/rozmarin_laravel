@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ServiceController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,5 +17,5 @@ use App\Http\Controllers\IndexController;
 
 Route::get('/', [IndexController::class, "index"])->name('home');
 Route::get('/about', [IndexController::class, "about"])->name('about');
-Route::get('/service-detail', [IndexController::class, "serviceDetail"])->name('serviceDetail');
+Route::get('/service/{slug}', [ServiceController::class, "index"])->name('service_page');
 Route::get('/our-works', [IndexController::class, "ourWorks"])->name('ourWorks');

@@ -15,9 +15,7 @@ class IndexController extends Controller
     public function about() {
         return view('about');
     }
-    public function serviceDetail() {
-        return view('service-detail');
-    }
+
     public function ourWorks() {
         return view('our-works');
     }

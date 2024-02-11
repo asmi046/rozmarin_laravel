@@ -47,6 +47,7 @@
             </div>
         </div>
     </section>
+
     <section class="services-section" id="services">
         <img src="{{asset('img/services-decor-img.png')}}" class="services-section__decor-img services-section__decor-img--left" aria-hidden="true" alt="">
         <img src="{{asset('img/services-decor-img.png')}}" class="services-section__decor-img services-section__decor-img--right" aria-hidden="true" alt="">
@@ -56,34 +57,12 @@
             </h2>
             <div class="services-box">
                 @foreach ($all_services as $item)
-                    <a href="#" class="service">
-                        <img src="{{ $item->img }}" alt="{{ $item->title }}" class="service__img">
-                        <span class="service__caption">{{ $item->title }}</span>
-                    </a>
+                    <x-service.main :item="$item"></x-service.main>
                 @endforeach
-                {{-- <a href="{{route('serviceDetail')}}" class="service">
-                    <img src="{{asset('img/service-img-1.jpg')}}" alt="" class="service__img">
-                    <span class="service__caption">Консультация дизайнера</span>
-                </a>
-                <a href="#" class="service">
-                    <img src="{{asset('img/service-img-2.jpg')}}" alt="" class="service__img">
-                    <span class="service__caption">Проектирование и визуализация</span>
-                </a>
-                <a href="#" class="service">
-                    <img src="{{asset('img/service-img-3.jpg')}}" alt="" class="service__img">
-                    <span class="service__caption">Благоустройство и озеленение</span>
-                </a>
-                <a href="#" class="service">
-                    <img src="{{asset('img/service-img-4.jpg')}}" alt="" class="service__img">
-                    <span class="service__caption">Уход за садом</span>
-                </a>
-                <a href="#" class="service">
-                    <img src="{{asset('img/service-img-5.jpg')}}" alt="" class="service__img">
-                    <span class="service__caption">Вертикальное озеленение</span>
-                </a> --}}
             </div>
         </div>
     </section>
+
     <section class="our-works-section" id="our-works">
         <div class="inner clearfix">
             <h2 class="section-title">Наши работы</h2>

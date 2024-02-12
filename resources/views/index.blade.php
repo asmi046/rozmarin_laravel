@@ -154,26 +154,8 @@
                     </div>
                 </div>
                 <div class="contacts__right-col">
-                    <form class="callback-form">
-                        <label class="form-elem">
-                            <input type="email" name="email" class="form-elem__field" placeholder="Ваш Email">
-                            {{-- <span class="form-elem__error">ошибка вашу дивизию</span> --}}
-                        </label>
-                        <label class="form-elem">
-                            <input type="tel" name="tel" class="form-elem__field tel-mask" placeholder="Ваш телефон">
-                            {{-- <span class="form-elem__error">ошибка вашу дивизию</span> --}}
-                        </label>
-                        <label class="form-elem">
-                            <input type="text" name="name" class="form-elem__field" placeholder="Ваше имя">
-                            {{-- <span class="form-elem__error">ошибка вашу дивизию</span> --}}
-                        </label>
-                        <label class="form-elem">
-                            <textarea name="query" id="" cols="30" rows="10" class="form-elem__textarea" placeholder="Ваш вопрос"></textarea>
-                            {{-- <span class="form-elem__error">ошибка вашу дивизию</span> --}}
-                        </label>
-                        <button type="submit" class="btn">Отправить</button>
-                        <span class="form-notification">Нажимая на кнопку “отправить заявку” вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
-                    </form>
+
+                    <x-consultation-form.form></x-consultation-form.form>
                 </div>
             </div>
 

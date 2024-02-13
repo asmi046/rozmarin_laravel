@@ -79,11 +79,11 @@
     .our-works-box{
         grid-template-columns: repeat(2, 1fr);
     }
-    .our-work {
-        .our-work__img{
-            padding-top: 65%;
-        }
-    }
+    // .our-work {
+    //     .our-work__img{
+    //         // padding-top: 65%;
+    //     }
+    // }
 }
 @media screen and (max-width: 700px){
     .our-works-box{
@@ -108,9 +108,9 @@
     .our-works-box{
         grid-template-columns: 1fr;
     }
-    .our-work {
-        .our-work__img{
-            padding-top: 60%;
-        }
-    }
+    // .our-work {
+    //     .our-work__img{
+    //         padding-top: 60%;
+    //     }
+    // }
 }

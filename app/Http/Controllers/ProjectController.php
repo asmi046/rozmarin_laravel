@@ -13,4 +13,10 @@ class ProjectController extends Controller
             'all_project' => $all_project,
         ]);
     }
+
+    public function project_page($slug) {
+        $project = Project::where('slug', $slug)->first();
+        if($project == null) abort('404');
+        return view('project-page', ['project' => $project]);
+    }
 }

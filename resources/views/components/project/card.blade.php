@@ -5,6 +5,6 @@
     </div>
     <div class="our-work__text">
         <span class="our-work__name">{{ $item->title }}</span>
-        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
+        <a href="{{ route('project_page', $item->slug) }}" class="our-work__link">Подробнее <span>→</span></a>
     </div>
 </div>

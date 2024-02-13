@@ -11,11 +11,11 @@
 
 
 
-            @if (Request::route()->named('search-tovar'))
+            @if (Request::route()->named('project_page'))
                 <span class="sep"> / </span>
                 <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a title="{{$article}}" itemprop="item" href="{{route('search', ['search'=> $article])}}">
-                        <span itemprop="name">{{ $article }}</span>
+                    <a title="Все проекты" itemprop="item" href="{{route('projects')}}">
+                        <span itemprop="name">Все проекты</span>
                         <meta itemprop="position" content="1">
                     </a>
                 </span>
@@ -23,8 +23,8 @@
                 <span class="sep"> / </span>
 
                 <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="finish">
-                    <span title="{{ $brand }}" itemprop="item">
-                        <span itemprop="name">{{ $brand }}</span>
+                    <span title="{{ $project->title }}" itemprop="item">
+                        <span itemprop="name">{{ $project->title }}</span>
                         <meta itemprop="position" content="2">
                     </span>
                 </span>

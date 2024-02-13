@@ -9,6 +9,7 @@ use MoonShine\Menu\MenuItem;
 use MoonShine\Enums\PageType;
 use MoonShine\Menu\MenuGroup;
 use App\MoonShine\Resources\OptionResource;
+use App\MoonShine\Resources\ProjectResource;
 use App\MoonShine\Resources\ServiceResource;
 use MoonShine\Resources\MoonShineUserResource;
 use MoonShine\Resources\MoonShineUserRoleResource;
@@ -42,13 +43,21 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 
             MenuItem::make(
                 "Услуги",
-                new ServiceResource()
+                new ServiceResource(),
+                "heroicons.fire"
             ),
 
 
             MenuItem::make(
+                "Проекты",
+                new ProjectResource(),
+                "heroicons.map"
+            ),
+
+            MenuItem::make(
                 "Опции сайта",
-                new OptionResource()
+                new OptionResource(),
+                "heroicons.cursor-arrow-rays"
             ),
 
 

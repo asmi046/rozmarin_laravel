@@ -14,10 +14,13 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string("title")->comment("Название услуги");
+            $table->string("title")->comment("Название проекта");
+            $table->integer('year')->comment('Год выполнения');
             $table->string('slug')->comment('Слаг');
-            $table->string('img')->nullable()->comment('Картинка баннера');
-            $table->text("description")->comment("Текст услуги");
+            $table->string('img')->comment('Обложка');
+            $table->json('file')->nullable()->comment('Файл проекта');
+            $table->json('galery')->nullable()->comment('Галерея в слайдере');
+            $table->text("description")->nullable()->comment("Текст услуги");
 
             $table->string('seo_title')->nullable()->comment('SEO заголовок');
             $table->text('seo_description')->nullable()->comment('SEO описание');

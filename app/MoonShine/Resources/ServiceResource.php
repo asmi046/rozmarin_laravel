@@ -7,11 +7,13 @@ namespace App\MoonShine\Resources;
 use App\Models\Service;
 use MoonShine\Fields\ID;
 
+use MoonShine\Fields\File;
 use MoonShine\Fields\Slug;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\Color;
 use MoonShine\Fields\Image;
 use MoonShine\Fields\TinyMce;
+use MoonShine\Fields\Textarea;
 use MoonShine\Decorations\Block;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
@@ -33,19 +35,28 @@ class ServiceResource extends ModelResource
                     ->disk('public')
                     ->removable()
                     ->dir('services'),
+
                 Image::make("Галерея", "galery")
                     ->multiple()
                     ->removable()
                     ->disk('public')
                     ->hideOnIndex()
                     ->dir('galery'),
+
                 Text::make( 'Заголовок', 'title'),
+
                 Slug::make( 'Slug', 'slug')
                     ->from('title')
                     ->unique()
                     ->hideOnIndex(),
+
                 TinyMce::make( 'Цитата', 'description', fn($item) => mb_strimwidth($item->description, 0, 60, "..." )),
             ]),
+
+            Block::make([
+                Text::make( 'Seo заголовок', 'seo_title')->hideOnIndex(),
+                Textarea::make( 'Seo описание', 'seo_description')->hideOnIndex(),
+            ])
         ];
     }
 

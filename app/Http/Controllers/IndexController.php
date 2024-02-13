@@ -22,6 +22,10 @@ class IndexController extends Controller
         return view('policy');
     }
 
+    public function about() {
+        return view('about');
+    }
+
     public function ourWorks() {
         return view('our-works');
     }

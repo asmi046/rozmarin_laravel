@@ -5,26 +5,15 @@
         </a>
         <nav>
             <menu class="main-menu">
-                <li>
-                    <a href="{{route('about')}}" class="anchor-link">О компании</a>
-                </li>
-                <li>
-                    <a href="./#services" class="anchor-link">Услуги</a>
-                </li>
-                <li>
-                    <a href="{{route('ourWorks')}}" class="anchor-link">Портфолио</a>
-                </li>
-                <li>
-                    <a href="./#contacts" class="anchor-link">Контакты</a>
-                </li>
+                <x-menu-puncts></x-menu-puncts>
             </menu>
         </nav>
         <div class="header-contacts">
             <div class="header-contacts__phone-box">
-                <span class="header-contacts__phone">+7 960 690 59 51</span>
-                <span class="header-contacts__phone">+7 919 170 07 05</span>
+                <a href="tel:+7{{ phone_format($options['phone']) }}" class="header-contacts__phone" >{{ $options['phone'] }}</a>
+                <a href="tel:+7{{ phone_format($options['phone2']) }}" class="header-contacts__phone" >{{ $options['phone2'] }}</a>
             </div>
-            <a href="https://vk.com/club211378898" class="social-link social-link--vk">ВК</a>
+            <a href="{{ phone_format($options['vk_lnk']) }}" class="social-link social-link--vk">ВК</a>
             <button class="burger-btn"><span></span></button>
         </div>
     </div>

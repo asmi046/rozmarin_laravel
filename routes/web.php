@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ProjectController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,4 +19,4 @@ use App\Http\Controllers\ServiceController;
 Route::get('/', [IndexController::class, "index"])->name('home');
 Route::get('/about', [IndexController::class, "about"])->name('about');
 Route::get('/service/{slug}', [ServiceController::class, "index"])->name('service_page');
-Route::get('/our-works', [IndexController::class, "ourWorks"])->name('ourWorks');
+Route::get('/all-projects', [ProjectController::class, "index"])->name('projects');

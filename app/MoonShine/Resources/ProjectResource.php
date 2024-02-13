@@ -22,7 +22,7 @@ class ProjectResource extends ModelResource
 {
     protected string $model = Project::class;
 
-    protected string $title = 'Projects';
+    protected string $title = 'Проекты';
 
     public function fields(): array
     {

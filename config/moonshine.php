@@ -5,7 +5,7 @@ use MoonShine\Forms\LoginForm;
 use MoonShine\Http\Middleware\Authenticate;
 use MoonShine\Http\Middleware\SecurityHeadersMiddleware;
 use MoonShine\Models\MoonshineUser;
-use MoonShine\MoonShineLayout;
+use App\MoonShine\MoonShineLayout;
 use MoonShine\Pages\ProfilePage;
 
 return [
@@ -95,4 +95,8 @@ return [
     'socialite' => [
         // 'driver' => 'path_to_image_for_button'
     ],
+
+    'footer' => [
+        'copyright' => "!!"
+    ]
 ];

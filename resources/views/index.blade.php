@@ -23,8 +23,8 @@
                 <img src="{{asset('img/f-img-1.svg')}}" alt="" class="f-img-1">
             </div>
             <div class="hall__phone-box">
-                <a href="tel:+79606905951" class="hall__phone">+7 960 690 59 51</a>
-                <a href="tel:+79191707507" class="hall__phone">+7 919 170 75 07</a>
+                <a href="tel:+7{{ phone_format($options['phone']) }}" class="hall__phone">{{ phone_format($options['phone']) }}</a>
+                <a href="tel:+7{{ phone_format($options['phone2']) }}" class="hall__phone">{{ phone_format($options['phone2']) }}</a>
             </div>
             <h1 class="page-title">Студия ландшафтного дизайна</h1>
             <a href="#contacts" class="btn anchor-link">Получить консультацию</a>
@@ -67,68 +67,11 @@
         <div class="inner clearfix">
             <h2 class="section-title">Наши работы</h2>
             <div class="our-works-box">
-                <div class="our-work">
-                    <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-1.jpg')}}">
-                        <img src="{{asset('img/ow-1.jpg')}}" alt="" class="lightgallery">
-                        <span class="our-work__marker">Частные участки</span>
-                    </div>
-                    <div class="our-work__text">
-                        <span class="our-work__name">Пример названия</span>
-                        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
-                    </div>
-                </div>
-                <div class="our-work">
-                    <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-2.jpg')}}">
-                        <img src="{{asset('img/ow-2.jpg')}}" alt="" class="lightgallery">
-                        <span class="our-work__marker">Частные участки</span>
-                    </div>
-                    <div class="our-work__text">
-                        <span class="our-work__name">Пример длинного названия   </span>
-                        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
-                    </div>
-                </div>
-                <div class="our-work">
-                    <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-3.jpg')}}">
-                        <img src="{{asset('img/ow-3.jpg')}}" alt="" class="lightgallery">
-                        <span class="our-work__marker">Частные участки</span>
-                    </div>
-                    <div class="our-work__text">
-                        <span class="our-work__name">Пример очень неожиданно длинного названия   </span>
-                        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
-                    </div>
-                </div>
-                <div class="our-work">
-                    <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-4.jpg')}}">
-                        <img src="{{asset('img/ow-4.jpg')}}" alt="" class="lightgallery">
-                        <span class="our-work__marker">Частные участки</span>
-                    </div>
-                    <div class="our-work__text">
-                        <span class="our-work__name">Пример названия</span>
-                        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
-                    </div>
-                </div>
-                <div class="our-work">
-                    <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-5.jpg')}}">
-                        <img src="{{asset('img/ow-5.jpg')}}" alt="" class="lightgallery">
-                        <span class="our-work__marker">Частные участки</span>
-                    </div>
-                    <div class="our-work__text">
-                        <span class="our-work__name">Пример названия</span>
-                        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
-                    </div>
-                </div>
-                <div class="our-work">
-                    <div class="our-work__img lightgallery-box" data-src="{{asset('img/ow-6.jpg')}}">
-                        <img src="{{asset('img/ow-6.jpg')}}" alt="" class="lightgallery">
-                        <span class="our-work__marker">Казенные участки</span>
-                    </div>
-                    <div class="our-work__text">
-                        <span class="our-work__name">Пример названия</span>
-                        <a href="#" class="our-work__link">Подробнее <span>→</span></a>
-                    </div>
-                </div>
+                @foreach ($main_project as $item)
+                    <x-project.card :item="$item"></x-project.card>
+                @endforeach
             </div>
-            <a href="{{route('ourWorks')}}" class="btn">Смотреть все примеры работ</a>
+            <a href="{{route('projects')}}" class="btn">Смотреть все примеры работ</a>
         </div>
     </section>
     <section class="contact-section" id="contacts">
@@ -139,18 +82,18 @@
                 <div class="contacts__left-col">
                     <ul class="contact-list">
                         <li>
-                            +7 960 690 59 51
+                            <a href="tel:+7{{ phone_format($options['phone']) }}">{{ $options['phone'] }}</a>
                         </li>
                         <li>
-                            +7 919 170 75 07
+                            <a href="tel:+7{{ phone_format($options['phone2']) }}">{{ $options['phone2'] }}</a>
                         </li>
                         <li>
-                            <a href="mailto:landshaft.rosmarin@gmail.com">landshaft.rosmarin@gmail.com</a>
+                            <a href="mailto:{{ $options['email'] }}">{{ $options['email'] }}</a>
                         </li>
                     </ul>
                     <div class="social-link-box">
-                        <a href="https://vk.com/club211378898" class="social-link social-link--vk">ВК</a>
-                        <a href="https://vk.com/club211378898" class="social-link social-link--instagram">ВК</a>
+                        <a href="{{ $options['vk_lnk'] }}" class="social-link social-link--vk">ВК</a>
+                        {{-- <a href="{{ $options['tg_lnk'] }}" class="social-link social-link--instagram">ВК</a> --}}
                     </div>
                 </div>
                 <div class="contacts__right-col">

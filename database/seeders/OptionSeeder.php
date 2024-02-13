@@ -42,14 +42,14 @@ class OptionSeeder extends Seeder
                     "name" => "tg_lnk",
                     "type" => "plan",
                     'title' => 'Ссылка на Telegram',
-                    "value" => "#",
+                    "value" => "https://t.me/MarinaShabanovaa",
                 ],
 
                 [
                     "name" => "vk_lnk",
                     "type" => "plan",
                     'title' => 'Ссылка на Vk',
-                    "value" => "#",
+                    "value" => "https://vk.com/club211378898",
                 ],
 
                 [

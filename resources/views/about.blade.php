@@ -80,6 +80,8 @@
                     </p>
                 </li>
             </ol>
+
+            {{--
             <h2 class="section-title">
                 Наша команда
             </h2>
@@ -100,7 +102,9 @@
                     <img src="{{asset('img/teams-4.jpg')}}" alt="" class="teams-item__img">
                     <span class="teams-item__name">Константинопольская <br> Анастасия Игоревна</span>
                 </div>
-            </div>
+            </div> --}}
+
+
         </div>
     </section>
 @endsection

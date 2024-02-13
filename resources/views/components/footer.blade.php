@@ -5,25 +5,11 @@
         <div class="footer-content__top">
 
                 <menu class="main-menu">
-                    <li>
-                        <a href="#">Главная</a>
-                    </li>
-                    <li>
-                        <a href="#">О компании</a>
-                    </li>
-                    <li>
-                        <a href="#">Услуги</a>
-                    </li>
-                    <li>
-                        <a href="#">Портфолио</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
+                    <x-menu-puncts></x-menu-puncts>
                 </menu>
             </div>
             <div class="footer-content__bottom">
-                <span class="footer__copyright">© Все права защищены. 2024</span>
+                <span class="footer__copyright">© Все права защищены. 2021 - {{ date("Y")}}</span>
                 <a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
             </div>
        </div>

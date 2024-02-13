@@ -45,7 +45,7 @@ class ServiceSeeder extends Seeder
                 [
                     'title' => $key,
                     'slug' => Str::slug($key),
-                    'img' => $item,
+                    'img' => "services/".$item,
                     'galery' => json_encode(["galery/g2.jpg", "galery/g1.jpg"]),
                     'description' => file_get_contents(public_path($text_element[$key])),
                     'seo_title' => $key,

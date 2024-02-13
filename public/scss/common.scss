@@ -402,16 +402,33 @@ h6, .h6{
     }
 }
 
-.pagination{
+.pagination_line {
+    width:100%;
     display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
+}
+
+.pagination{
+    width:100%;
+    display: flex;
+
     padding: 0;
     margin: 0;
     margin-top: 4rem;
     list-style-type: none;
-    li{
-        a, span{
+
+    .pagination__nav-links {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .pagination__next,
+    .pagination__back {
+        line-height: 40px;
+        color: var(--black);
+    }
+
+        a.pagination__numbers, span{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -423,16 +440,16 @@ h6, .h6{
             color: var(--black);
             transition: var(--great-transition);
         }
-        a{
+        a.pagination__numbers{
             &:hover{
                 text-decoration: none;
             }
-            &.active{
+            &.current{
                 background-color: var(--purple);
                 color: var(--light);
             }
         }
-    }
+
 }
 
 .table{

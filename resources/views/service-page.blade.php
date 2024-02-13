@@ -23,41 +23,35 @@
 
             {!! $service_info->description !!}
 
-            <!-- Slider main container -->
-            <div class="ex-slider-box">
-                <div class="swiper ex-slider">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="lightgallery-box" data-src="{{asset('img/ex-1.jpg')}}">
-                                <img src="{{asset('img/ex-1.jpg')}}" alt="" class="lightgallery">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="lightgallery-box" data-src="{{asset('img/ex-2.jpg')}}">
-                                <img src="{{asset('img/ex-2.jpg')}}" alt="" class="lightgallery">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="lightgallery-box" data-src="{{asset('img/ex-3.jpg')}}">
-                                <img src="{{asset('img/ex-3.jpg')}}" alt="" class="lightgallery">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="lightgallery-box" data-src="{{asset('img/ex-4.jpg')}}">
-                                <img src="{{asset('img/ex-4.jpg')}}" alt="" class="lightgallery">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-                  <!-- If we need pagination -->
-                  <div class="swiper-pagination"></div>
 
-            </div>
+            @if (count($service_info->galery) > 0)
+                <!-- Slider main container -->
+                <div class="ex-slider-box">
+                    <div class="swiper ex-slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            @foreach ($service_info->galery as $item)
+                                <div class="swiper-slide">
+                                    <div class="lightgallery-box" data-src="{{ Storage::url($item) }}">
+                                        <img src="{{ Storage::url($item) }}" alt="{{ $service_info->title }}" class="lightgallery">
+                                    </div>
+                                </div>
+                            @endforeach
+
+
+
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            @endif
+
 
         </div>
     </section>

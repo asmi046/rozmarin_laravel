@@ -23,8 +23,8 @@
                 <img src="{{asset('img/f-img-1.svg')}}" alt="" class="f-img-1">
             </div>
             <div class="hall__phone-box">
-                <a href="tel:+7{{ phone_format($options['phone']) }}" class="hall__phone">{{ phone_format($options['phone']) }}</a>
-                <a href="tel:+7{{ phone_format($options['phone2']) }}" class="hall__phone">{{ phone_format($options['phone2']) }}</a>
+                <a href="tel:+7{{ phone_format($options['phone']) }}" class="hall__phone">{{ $options['phone'] }}</a>
+                <a href="tel:+7{{ phone_format($options['phone2']) }}" class="hall__phone">{{ $options['phone2'] }}</a>
             </div>
             <h1 class="page-title">Студия ландшафтного дизайна</h1>
             <a href="#contacts" class="btn anchor-link">Получить консультацию</a>

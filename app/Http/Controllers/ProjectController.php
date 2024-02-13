@@ -15,7 +15,7 @@ class ProjectController extends Controller
     }
 
     public function project_page($slug) {
-        $project = Project::where('slug', $slug)->first();
+        $project = Project::where('slug', $slug)->orderBy('year', "DESC")->first();
         if($project == null) abort('404');
         return view('project-page', ['project' => $project]);
     }

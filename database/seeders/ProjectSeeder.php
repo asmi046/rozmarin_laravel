@@ -43,23 +43,36 @@ class ProjectSeeder extends Seeder
             "На крыльях фантазии" => 2024,
         ];
 
+        $data_obl = [
+            "Хвойный сад на склоне" => "Хвойный сад на склоне.webp",
+
+            "Классика сада" => "Классика сада.webp",
+            "Комфортный отдых" => "Комфортный отдых.webp",
+            "Позитивный настрой" => "Позитивный настрой.webp",
+            "Солнечный сад" => "Солнечный сад.webp",
+
+            "В Гармонии с природой" => "В Гармонии с природой.webp",
+            "Гармония" => "Гармония.webp",
+            "На краю облака" => "На краю облака.webp",
+            "Релакс" => "Релакс.webp",
+
+            "На крыльях фантазии" => "На крыльях фантазии.webp",
+        ];
+
         foreach ($data_element as $key => $item) {
 
             $photo = $this->get_all_jpg(public_path("project/".$item."/".$key), ".jpg");
             $pdf = $this->get_all_jpg(public_path("project/".$item."/".$key), ".pdf");
 
-            $oblozgka = "";
+            $oblozgka = "oblozgka/.$data_obl[$key]";
+
+            Storage::disk('public')->put($oblozgka, file_get_contents(public_path("project/obl/".$data_obl[$key])), 'public');
+
             $galery = [];
             $i = 0;
             foreach ($photo as $key_inner => $item_inner) {
                 Storage::disk('public')->put("project/".$key_inner, file_get_contents($item_inner), 'public');
-
                 $galery[] = "project/".$key_inner;
-
-                if ($i == 0)
-                    $oblozgka = "project/".$key_inner;
-
-                $i++;
             }
 
             $files = [];

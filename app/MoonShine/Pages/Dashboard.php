@@ -8,6 +8,8 @@ use MoonShine\Pages\Page;
 
 class Dashboard extends Page
 {
+    public string $title = "Студия ландшафтного Розмарин";
+
     public function breadcrumbs(): array
     {
         return [

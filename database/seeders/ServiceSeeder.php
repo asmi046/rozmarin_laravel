@@ -37,13 +37,16 @@ class ServiceSeeder extends Seeder
 
         foreach ($data_element as $key => $item) {
 
-            Storage::disk('public')->put($item, file_get_contents(public_path('img/services/'.$item)), 'public');
+            Storage::disk('public')->put("services/".$item, file_get_contents(public_path('img/services/'.$item)), 'public');
+            Storage::disk('public')->put("galery/g1.jpg", file_get_contents(public_path('img/galery/g1.jpg')), 'public');
+            Storage::disk('public')->put("galery/g2.jpg", file_get_contents(public_path('img/galery/g2.jpg')), 'public');
 
             DB::table("services")->insert(
                 [
                     'title' => $key,
                     'slug' => Str::slug($key),
-                    'img' => Storage::url($item),
+                    'img' => $item,
+                    'galery' => json_encode(["galery/g2.jpg", "galery/g1.jpg"]),
                     'description' => file_get_contents(public_path($text_element[$key])),
                     'seo_title' => $key,
                     'seo_description' => $key,

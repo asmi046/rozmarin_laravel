@@ -29,7 +29,8 @@
         "cache_clear": "ssh marish8d_all@marish8d.beget.tech \"cd landshaft-rosmarin.ru/public_html && php8.1 artisan cache:clear\"",
         "optimize": "ssh marish8d_all@marish8d.beget.tech \"cd landshaft-rosmarin.ru/public_html && php8.1 artisan optimize\"",
         "optimize_all": "npm run optimize && npm run cache_clear && npm run cache_view && npm run cache_route && npm run cache_config",
-        "deploy_m": "vite build && npm run send_vite_build && npm run pull_rep && npm run optimize_all"
+        "deploy_m": "vite build && npm run send_vite_build && npm run pull_rep && npm run optimize_all",
+        "user_create": "ssh marish8d_all@marish8d.beget.tech \"cd landshaft-rosmarin.ru/public_html && php8.1 artisan moonshine:user -u asmi046@gmail.com -N asmi -p 123"
     },
     "devDependencies": {
         "axios": "^1.6.4",

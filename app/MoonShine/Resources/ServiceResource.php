@@ -7,8 +7,10 @@ namespace App\MoonShine\Resources;
 use App\Models\Service;
 use MoonShine\Fields\ID;
 
+use MoonShine\Fields\Slug;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\Color;
+use MoonShine\Fields\Image;
 use MoonShine\Fields\TinyMce;
 use MoonShine\Decorations\Block;
 use MoonShine\Resources\ModelResource;
@@ -27,8 +29,21 @@ class ServiceResource extends ModelResource
         return [
             Block::make([
                 ID::make()->sortable(),
+                Image::make("Обложка", "img")
+                    ->disk('public')
+                    ->removable()
+                    ->dir('services'),
+                Image::make("Галерея", "galery")
+                    ->multiple()
+                    ->removable()
+                    ->disk('public')
+                    ->hideOnIndex()
+                    ->dir('galery'),
                 Text::make( 'Заголовок', 'title'),
-                Text::make( 'Slug', 'slug'),
+                Slug::make( 'Slug', 'slug')
+                    ->from('title')
+                    ->unique()
+                    ->hideOnIndex(),
                 TinyMce::make( 'Цитата', 'description', fn($item) => mb_strimwidth($item->description, 0, 60, "..." )),
             ]),
         ];

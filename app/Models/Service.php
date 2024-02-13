@@ -15,9 +15,14 @@ class Service extends Model
         'title',
         'slug',
         'img',
+        'galery',
         'description',
         'seo_title',
         'seo_description',
+    ];
+
+    protected $casts = [
+        "galery" => 'array'
     ];
 
     public function setSlugAttribute($value)

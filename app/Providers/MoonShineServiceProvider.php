@@ -40,17 +40,17 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                ),
             ]),
 
-            MenuGroup::make("Услуги", [
-                MenuItem::make(
-                    "Все услсги",
-                    new ServiceResource()
-                ),
+            MenuItem::make(
+                "Услуги",
+                new ServiceResource()
+            ),
 
-                MenuItem::make(
-                    "Опции сайта",
-                    new OptionResource()
-                ),
-            ]),
+
+            MenuItem::make(
+                "Опции сайта",
+                new OptionResource()
+            ),
+
 
 
         ];

@@ -23,5 +23,5 @@
         @enderror
     </label>
     <button type="submit" class="btn">Отправить</button>
-    <span class="form-notification">Нажимая на кнопку “отправить заявку” вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+    <span class="form-notification">Нажимая на кнопку “отправить заявку” вы соглашаетесь с <a href="{{ route('policy') }}">политикой конфиденциальности</a></span>
 </form>

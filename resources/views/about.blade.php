@@ -2,10 +2,8 @@
 @extends('layouts.all')
 
 @php
-    $title = "Заголовок";
-    $description = "Дескрипшен";
-    $pageTitle = "Презентация региона"
-
+    $title = "О нашей компании";
+    $description = "Студия ландшафтного дизайна Розмарин, креативные проекты садов и придомовых территорий";
 @endphp
 
 @section('title', $title)

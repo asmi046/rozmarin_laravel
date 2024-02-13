@@ -21,3 +21,5 @@ Route::get('/about', [IndexController::class, "about"])->name('about');
 Route::get('/service/{slug}', [ServiceController::class, "index"])->name('service_page');
 Route::get('/all-projects', [ProjectController::class, "index"])->name('projects');
 Route::get('/all-projects/{slug}', [ProjectController::class, "project_page"])->name('project_page');
+
+Route::get('/policy', [IndexController::class, "policy"])->name('policy');

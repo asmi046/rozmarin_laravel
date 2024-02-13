@@ -10,7 +10,7 @@
             </div>
             <div class="footer-content__bottom">
                 <span class="footer__copyright">© Все права защищены. 2021 - {{ date("Y")}}</span>
-                <a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
+                <a href="{{ route('policy') }}" class="footer__privacy-policy">Политика конфиденциальности</a>
             </div>
        </div>
 

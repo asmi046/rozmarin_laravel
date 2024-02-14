@@ -13,9 +13,9 @@
 
 @section('main')
     <section class="hall-section">
-        <img src="{{asset('img/hall-decor-img.png')}}" class="hall-section__decor-img hall-section__decor-img--left" aria-hidden="true" alt="">
-        <img src="{{asset('img/hall-decor-img.png')}}" class="hall-section__decor-img hall-section__decor-img--right" aria-hidden="true" alt="">
-        <div class="inner">
+        {{-- <img src="{{asset('img/hall-decor-img.png')}}" class="hall-section__decor-img hall-section__decor-img--left" aria-hidden="true" alt="">
+        <img src="{{asset('img/hall-decor-img.png')}}" class="hall-section__decor-img hall-section__decor-img--right" aria-hidden="true" alt=""> --}}
+        <div class="inner top_info_box">
             <div class="f-img-box">
                 <img src="{{asset('img/f-img-5.svg')}}" alt="" class="f-img-5">
                 <img src="{{asset('img/f-img-6.svg')}}" alt="" class="f-img-6">
@@ -28,7 +28,7 @@
                 <a href="tel:+7{{ phone_format($options['phone']) }}" class="hall__phone">{{ $options['phone'] }}</a>
                 <a href="tel:+7{{ phone_format($options['phone2']) }}" class="hall__phone">{{ $options['phone2'] }}</a>
             </div>
-            <h1 class="page-title">Студия ландшафтного дизайна</h1>
+            <h1 class="page-title">Студия<br> ландшафтного дизайна</h1>
             <a href="#contacts" class="btn anchor-link">Получить консультацию</a>
         </div>
         <div class="inner about-box">

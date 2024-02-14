@@ -1,4 +1,15 @@
 @font-face {
+	font-family: 'GOST type B';
+	src: url('../fonts/GOSTB/GOST-2304-81typeB.eot');
+	src: local('../fonts/GOSTB/GOST 2.304-81 type B'), local('GOST-2.304-81typeB'),
+		url('../fonts/GOSTB/GOST-2304-81typeB.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GOSTB/GOST-2304-81typeB.woff') format('woff'),
+		url('../fonts/GOSTB/GOST-2304-81typeB.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat/Montserrat-Light.eot);
     src: url(../fonts/Montserrat/Montserrat-Light.eot?#iefix) format('embedded-opentype'),

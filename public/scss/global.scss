@@ -28,14 +28,16 @@ body{
     -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -o-font-smoothing: antialiased;
     min-height:100vh;
     background-color: var(--light);
-    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Montserrat', sans-serif;
+    font-family: 'GOST type B', sans-serif;
     color: var(--black);
     font-size: 1.6rem;
     line-height: 1.7;
     font-weight: 400;
 }
 #main{
-    padding-top: 4rem;
+    // padding-top: 4rem;
+    padding-top: 0;
     padding-bottom: 10rem;
     flex-grow: 1;
     box-sizing: border-box;
@@ -54,7 +56,8 @@ img, input, textarea, button, a{border:none; outline:none;}
 input, textarea{font-size: 1.6rem; line-height: 1.2; font-family: 'Montserrat', sans-serif;}
 
 input, textarea, button, a{
-    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Montserrat', sans-serif;
+    font-family: 'GOST type B', sans-serif;
     font-size: inherit;
     font-weight: 500;
 }

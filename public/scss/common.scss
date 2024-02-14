@@ -211,7 +211,8 @@ h6, .h6{
     line-height: 1.2;
     font-weight: 400;
     color: var(--black);
-    font-family: 'RobotoCondensed', sans-serif;
+    // font-family: 'RobotoCondensed', sans-serif;
+    font-family: 'GOST type B', sans-serif;
 }
 
 .hall-section{
@@ -253,6 +254,13 @@ h6, .h6{
         color: #404a44;
         font-weight: 300;
     }
+}
+
+.top_info_box{
+    background-color: #F8F8FF;
+    width: 100%;
+    max-width: unset;
+    padding: 40px 3%;
 }
 
 // ------------------about-box-------------------------

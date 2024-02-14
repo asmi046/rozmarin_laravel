@@ -51,8 +51,8 @@
     </section>
 
     <section class="services-section" id="services">
-        <img src="{{asset('img/services-decor-img.png')}}" class="services-section__decor-img services-section__decor-img--left" aria-hidden="true" alt="">
-        <img src="{{asset('img/services-decor-img.png')}}" class="services-section__decor-img services-section__decor-img--right" aria-hidden="true" alt="">
+        {{-- <img src="{{asset('img/services-decor-img.png')}}" class="services-section__decor-img services-section__decor-img--left" aria-hidden="true" alt="">
+        <img src="{{asset('img/services-decor-img.png')}}" class="services-section__decor-img services-section__decor-img--right" aria-hidden="true" alt=""> --}}
         <div class="inner">
             <h2 class="section-title">
                 Услуги

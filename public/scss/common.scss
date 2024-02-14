@@ -257,7 +257,7 @@ h6, .h6{
 }
 
 .top_info_box{
-    background-color: #F8F8FF;
+    background-color: #f4ead6;
     width: 100%;
     max-width: unset;
     padding: 40px 3%;
@@ -270,7 +270,7 @@ h6, .h6{
     gap: 20px;
     align-items: center;
     justify-content: space-between;
-    margin-top: 150px;
+    margin-top: 70px;
     .about-box__left-col{
         display: flex;
         flex-direction: column;
@@ -291,7 +291,7 @@ h6, .h6{
 
     }
     p{
-        font-size: 2rem;
+        font-size: 2.1rem;
     }
     .subtitle{
         font-size: 2.5rem;
@@ -357,7 +357,8 @@ h6, .h6{
         width: 55%;
     }
     p{
-        font-size: 1.8rem;
+        // font-size: 1.8rem;
+        font-size: 19px;
     }
 }
 
@@ -541,13 +542,14 @@ h6, .h6{
     position: relative;
     .work-stages-list-item__caption{
         display: block;
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         text-transform: uppercase;
         font-weight: 400;
         color: var(--khaki);
     }
     p{
         margin: 0;
+        font-size: 19px;
     }
     &::before {
         content: counter(num);

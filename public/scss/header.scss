@@ -95,7 +95,8 @@
     max-width: 800px;
     li{
         a{
-            font-size: 14px;
+            // font-size: 14px;
+            font-size: 18px;
             color: var(--light);
             text-transform: uppercase;
             font-weight: 400;
@@ -108,9 +109,10 @@
     gap: 2rem;
 }
 .header-contacts__phone-box{
+    line-height: 1.5;
     .header-contacts__phone{
         display: block;
-        font-size: 14px;
+        font-size: 18px;
         color: var(--light);
         font-weight: 400;
     }
@@ -149,7 +151,8 @@
                 gap: 3rem;
                 li{
                     a{
-                        font-size: 2rem;
+                        // font-size: 2rem;
+                        font-size: 18px;
                     }
                 }
             }

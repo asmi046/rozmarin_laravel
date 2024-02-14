@@ -17,6 +17,8 @@
         <img src="{{asset('img/hall-decor-img.png')}}" class="hall-section__decor-img hall-section__decor-img--right" aria-hidden="true" alt="">
         <div class="inner">
             <div class="f-img-box">
+                <img src="{{asset('img/f-img-5.svg')}}" alt="" class="f-img-5">
+                <img src="{{asset('img/f-img-6.svg')}}" alt="" class="f-img-6">
                 <img src="{{asset('img/f-img-4.svg')}}" alt="" class="f-img-4">
                 <img src="{{asset('img/f-img-3.svg')}}" alt="" class="f-img-3">
                 <img src="{{asset('img/f-img-2.svg')}}" alt="" class="f-img-2">
@@ -93,7 +95,7 @@
                     </ul>
                     <div class="social-link-box">
                         <a href="{{ $options['vk_lnk'] }}" class="social-link social-link--vk">ВК</a>
-                        {{-- <a href="{{ $options['tg_lnk'] }}" class="social-link social-link--instagram">ВК</a> --}}
+                        <a href="{{ $options['tg_lnk'] }}" class="social-link social-link--telegram">ВК</a>
                     </div>
                 </div>
                 <div class="contacts__right-col">

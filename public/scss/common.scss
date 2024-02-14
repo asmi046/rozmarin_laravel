@@ -21,6 +21,10 @@
         -webkit-mask-image: url(../img/instagram-icon.svg);
         mask-image: url(../img/instagram-icon.svg);
     }
+    &--telegram{
+        -webkit-mask-image: url(../img/telegram-icon.svg);
+        mask-image: url(../img/telegram-icon.svg);
+    }
 
 }
 
@@ -102,7 +106,7 @@ h6, .h6{
     position: relative;
     margin: 0 auto;
     max-width: 33.6rem;
-    width: 49%;
+    width: 47%;
     .f-img-1{
         position: relative;
         display: block;
@@ -115,9 +119,9 @@ h6, .h6{
     }
     .f-img-2{
         position: absolute;
-        top: 0px;
-        right: -30%;
-        width: 170%;
+        top: 10%;
+        right: -42%;
+        width: 70%;
         height: auto;
         z-index: 3;
         transition: all 700ms ease-in-out 400ms;
@@ -126,9 +130,9 @@ h6, .h6{
     }
     .f-img-3{
         position: absolute;
-        bottom: -2%;
-        right: -6%;
-        width: 47%;
+        bottom: -9%;
+        right: -63%;
+        width: 54%;
         height: auto;
         z-index: 2;
         transition: all 700ms ease-in-out 700ms;
@@ -137,12 +141,34 @@ h6, .h6{
     }
     .f-img-4{
         position: absolute;
-        bottom: -10%;
-        left: -52%;
-        width: 180%;
+        bottom: 10%;
+        left: -38%;
+        width: 73%;
         height: auto;
         z-index: 2;
         transition: all 700ms ease-in-out 1000ms;
+        transform: translateX(-16%);
+        opacity: 0;
+    }
+    .f-img-5{
+        position: absolute;
+        bottom: -16%;
+        right: -44%;
+        width: 77%;
+        height: auto;
+        z-index: 2;
+        transition: all 700ms ease-in-out 700ms;
+        transform: translateX(36%);
+        opacity: 0;
+    }
+    .f-img-6{
+        position: absolute;
+        bottom: -8%;
+        left: -35%;
+        width: 37%;
+        height: auto;
+        z-index: 2;
+        transition: all 700ms ease-in-out 1100ms;
         transform: translateX(-16%);
         opacity: 0;
     }
@@ -160,6 +186,14 @@ h6, .h6{
             opacity: 1;
         }
         .f-img-4{
+            transform: translateX(0);
+            opacity:1;
+        }
+        .f-img-5{
+            transform: translateX(0);
+            opacity:1;
+        }
+        .f-img-6{
             transform: translateX(0);
             opacity:1;
         }
@@ -355,6 +389,7 @@ h6, .h6{
 }
 .ex-slider-box{
     position: relative;
+    margin-top: 30px;
     .swiper-pagination {
         position: relative;
         margin-top: 2rem;
@@ -368,6 +403,22 @@ h6, .h6{
         object-position: center center;
         width: 100%;
         height: auto;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--purple-hover);
+        transition: var(--great-transition);
+        opacity: 0.7;
+        &::after{
+            font-size: 25px;
+            font-weight: bold;
+            color: var(--light);
+        }
+        &:hover{
+            opacity: 1;
+        }
     }
 }
 .link-to{
@@ -504,4 +555,41 @@ h6, .h6{
         line-height: 1.3;
 
     }
+}
+.year{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    &::before{
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: var(--khaki);
+        mask-image: url(../img/clock-icon.svg);
+        mask-size: contain;
+        mask-position: center center;
+        mask-repeat: no-repeat;
+    }
+}
+.presentation_file{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 500;
+    color: var(--purple-hover);
+    &::before{
+        content: '';
+        width: 23px;
+        height: 25px;
+        background-color: var(--purple-hover);
+        mask-image: url(../img/file-icon.svg);
+        mask-size: contain;
+        mask-position: center center;
+        mask-repeat: no-repeat;
+    }
+}
+
+a{
+    color: var( --purple-hover);
 }

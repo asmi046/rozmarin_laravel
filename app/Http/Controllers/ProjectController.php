@@ -8,14 +8,14 @@ use App\Models\Project;
 class ProjectController extends Controller
 {
     public function index() {
-        $all_project = Project::paginate(9);
+        $all_project = Project::orderBy('year', "DESC")->paginate(9);
         return view('our-projects', [
             'all_project' => $all_project,
         ]);
     }
 
     public function project_page($slug) {
-        $project = Project::where('slug', $slug)->orderBy('year', "DESC")->first();
+        $project = Project::where('slug', $slug)->first();
         if($project == null) abort('404');
         return view('project-page', ['project' => $project]);
     }

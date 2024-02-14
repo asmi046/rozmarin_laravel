@@ -15,7 +15,7 @@
     <section class="hall-section">
         {{-- <img src="{{asset('img/hall-decor-img.png')}}" class="hall-section__decor-img hall-section__decor-img--left" aria-hidden="true" alt="">
         <img src="{{asset('img/hall-decor-img.png')}}" class="hall-section__decor-img hall-section__decor-img--right" aria-hidden="true" alt=""> --}}
-        <div class="inner top_info_box">
+        <div class="inner">
             <div class="f-img-box">
                 <img src="{{asset('img/f-img-5.svg')}}" alt="" class="f-img-5">
                 <img src="{{asset('img/f-img-6.svg')}}" alt="" class="f-img-6">
@@ -42,8 +42,8 @@
             </div>
             <div class="about-box__right-col">
                 <div class="ld-img-box">
-                    <img src="{{asset('img/lg-img-1.svg')}}" alt="" class="ld-img-1">
-                    <img src="{{asset('img/lg-img-2.svg')}}" alt="" class="ld-img-2">
+                    <img src="{{asset('img/f-img-6.svg')}}" alt="" class="ld-img-1">
+                    <img src="{{asset('img/f-img-2.svg')}}" alt="" class="ld-img-2">
                     <img src="{{asset('img/ld.png')}}" alt="" class="ld-img">
                 </div>
             </div>

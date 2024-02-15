@@ -67,7 +67,7 @@
 
     <section class="our-works-section" id="our-works">
         <div class="inner clearfix">
-            <h2 class="section-title">Наши работы</h2>
+            <h2 class="section-title">Наши проекты</h2>
             <div class="our-works-box">
                 @foreach ($main_project as $item)
                     <x-project.card :item="$item"></x-project.card>

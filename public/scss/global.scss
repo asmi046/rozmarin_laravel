@@ -80,6 +80,16 @@ table{
         border-bottom:1px solid var(--black);
     }
 
+    @media screen and (max-width: 720px){
+        & tr th:nth-child(3),
+        & tr td:nth-child(3),
+        & tr th:nth-child(2),
+        & tr td:nth-child(2) {
+            display: none;
+        }
+    }
+
+
 }
 
 nav, dl{margin:0; padding:0;}

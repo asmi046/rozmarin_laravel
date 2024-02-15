@@ -389,6 +389,7 @@ h6, .h6{
 .content-page{
     p, ul, ol{
         margin: 1.5rem 0;
+        font-size: 19px;
     }
     ol, ul{
         display: flex;
@@ -516,7 +517,7 @@ h6, .h6{
     width: 100%;
     box-sizing: border-box;
     th{
-        background-color: rgba(106, 133, 116, 0.5);
+        text-align: center;
     }
     td, th{
         padding: 1rem;

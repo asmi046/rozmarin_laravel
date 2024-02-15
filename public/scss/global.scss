@@ -10,7 +10,8 @@ html{
     font-size: 10px;
     --black: #0A0405;
     --light: #ffffff;
-    --khaki: #6A8574;
+    // --khaki: #6A8574;
+    --khaki: #706352;
     --border: #c7c7c7;
     --grey: #b9b3b3;
     --purple: #AE9CCB;
@@ -62,19 +63,20 @@ input, textarea, button, a{
     font-weight: 500;
 }
 
+.to_center {
+    text-align: center;
+}
+
 table{
     border-spacing:0; border-collapse: collapse; margin: 0; padding: 0;
+    border-top: 1px solid var(--black);
+    border-left:1px solid var(--black);
     td, th{
         vertical-align:top;
         word-wrap:break-word;
         padding: 10px 25px;
-        background-color: #c3c999;
-        border-right: 1px solid #d9dcbd;
-        border-bottom:1px solid #d9dcbd;
-    }
-    th{
-        background-color: #82915a;
-        text-align: left;
+        border-right: 1px solid var(--black);
+        border-bottom:1px solid var(--black);
     }
 
 }

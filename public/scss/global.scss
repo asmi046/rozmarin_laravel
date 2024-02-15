@@ -81,10 +81,20 @@ table{
     }
 
     @media screen and (max-width: 720px){
-        & tr th:nth-child(3),
-        & tr td:nth-child(3),
-        & tr th:nth-child(2),
-        & tr td:nth-child(2) {
+        // & tr th:nth-child(3),
+        // & tr td:nth-child(3),
+        // & tr th:nth-child(2),
+        // & tr td:nth-child(2) {
+        //     display: none;
+        // }
+
+
+            tr{
+                display: flex;
+                flex-direction: column;
+            }
+
+        thead{
             display: none;
         }
     }

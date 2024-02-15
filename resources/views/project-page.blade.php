@@ -22,7 +22,7 @@
             <p class="year">Проект выполнен в {{ $project->year }} году</p>
             @if (!empty($project->file))
                 <p class="presentation_file">
-                    <a href="{{$project->file[0]}}">Презентация проекта</a>
+                    <a href="{{Storage::url($project->file[0])}}">Презентация проекта</a>
                 </p>
             @endif
 

@@ -99,11 +99,17 @@
                         <li>
                             <a href="mailto:{{ $options['email'] }}">{{ $options['email'] }}</a>
                         </li>
+                        <li>
+                            <strong>Марина Шабанова</strong>
+                        </li>
                     </ul>
                     <h3>Ландшафтный дизайнер в Белгороде:</h3>
                     <ul class="contact-list">
                         <li>
                             <a href="tel:+7{{ phone_format($options['phone_bel']) }}">{{ $options['phone_bel'] }}</a>
+                        </li>
+                        <li>
+                            <strong>Анна Серикова</strong>
                         </li>
                     </ul>
                     <div class="social-link-box">

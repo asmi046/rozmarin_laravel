@@ -54,9 +54,60 @@ class ServiceSeeder extends Seeder
             Storage::disk('public')->put("galery/12.webp", file_get_contents(public_path('img/galery/proj_viz/12.webp')), 'public');
             Storage::disk('public')->put("galery/13.webp", file_get_contents(public_path('img/galery/proj_viz/13.webp')), 'public');
 
+            Storage::disk('public')->put("galery/0-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/0-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/1-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/1-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/2-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/2-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/3-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/3-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/4-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/4-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/5-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/5-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/6-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/6-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/7-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/7-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/8-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/8-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/9-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/9-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/10-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/10-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/11-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/11-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/12-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/12-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/13-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/13-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/14-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/14-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/15-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/15-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/16-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/16-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/17-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/17-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/18-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/18-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/19-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/19-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/20-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/20-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/21-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/21-voz.jpg')), 'public');
+            Storage::disk('public')->put("galery/22-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/22-voz.jpg')), 'public');
+
 
             $galery = json_encode([
             ]);
+
+            if ($key === "Вертикальное озеленение")
+                $galery = json_encode([
+                    "galery/0-voz.jpg",
+                    "galery/1-voz.jpg",
+                    "galery/2-voz.jpg",
+                    "galery/3-voz.jpg",
+                    "galery/4-voz.jpg",
+                    "galery/5-voz.jpg",
+                    "galery/6-voz.jpg",
+                    "galery/7-voz.jpg",
+                    "galery/8-voz.jpg",
+                    "galery/9-voz.jpg",
+                    "galery/10-voz.jpg",
+                    "galery/11-voz.jpg",
+                    "galery/12-voz.jpg",
+                    "galery/13-voz.jpg",
+                    "galery/14-voz.jpg",
+                    "galery/15-voz.jpg",
+                    "galery/16-voz.jpg",
+                    "galery/17-voz.jpg",
+                    "galery/18-voz.jpg",
+                    "galery/19-voz.jpg",
+                    "galery/20-voz.jpg",
+                    "galery/21-voz.jpg",
+                    "galery/22-voz.jpg"
+                ]);
 
             if ($key === "Проектирование и визуализация")
                 $galery = json_encode([

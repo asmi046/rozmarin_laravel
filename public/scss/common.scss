@@ -94,6 +94,22 @@ p.header_center_text{
     margin: 5px 0;
 }
 
+.to_coll {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .coll_ {
+        width:48%;
+    }
+
+    @media screen and (max-width: 720px){
+        .coll_ {
+            width:100%;
+        }
+    }
+}
+
 .section-title{
     display: block;
     margin-bottom: 2rem;

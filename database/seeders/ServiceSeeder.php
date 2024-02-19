@@ -63,10 +63,8 @@ class ServiceSeeder extends Seeder
             Storage::disk('public')->put("galery/6-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/6-voz.jpg')), 'public');
             Storage::disk('public')->put("galery/7-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/7-voz.jpg')), 'public');
             Storage::disk('public')->put("galery/8-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/8-voz.jpg')), 'public');
-            Storage::disk('public')->put("galery/9-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/9-voz.jpg')), 'public');
             Storage::disk('public')->put("galery/10-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/10-voz.jpg')), 'public');
             Storage::disk('public')->put("galery/11-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/11-voz.jpg')), 'public');
-            Storage::disk('public')->put("galery/12-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/12-voz.jpg')), 'public');
             Storage::disk('public')->put("galery/13-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/13-voz.jpg')), 'public');
             Storage::disk('public')->put("galery/14-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/14-voz.jpg')), 'public');
             Storage::disk('public')->put("galery/15-voz.jpg", file_get_contents(public_path('img/galery/ver_oz/15-voz.jpg')), 'public');
@@ -93,10 +91,8 @@ class ServiceSeeder extends Seeder
                     "galery/6-voz.jpg",
                     "galery/7-voz.jpg",
                     "galery/8-voz.jpg",
-                    "galery/9-voz.jpg",
                     "galery/10-voz.jpg",
                     "galery/11-voz.jpg",
-                    "galery/12-voz.jpg",
                     "galery/13-voz.jpg",
                     "galery/14-voz.jpg",
                     "galery/15-voz.jpg",

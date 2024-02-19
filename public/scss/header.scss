@@ -1,15 +1,46 @@
+body{
+    padding-top: 105px;
+}
 #header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: var(--khaki);
     padding: 1rem 0;
     box-sizing: border-box;
+    z-index: 10;
+    transition: var(--great-transition);
+    &.header-fly{
+        position: fixed;
+        padding: 0.5rem 0;
+        .logo {
+            max-width: 6rem;
+        }
+        .main-menu {
+            max-width: 700px;
+            li {
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+        .header-contacts__phone-box {
+            .header-contacts__phone {
+                font-size: 14px;
+            }
+        }
+    }
     .logo{
         position: relative;
         max-width: 15rem;
         z-index: 20;
+        transition: var(--great-transition);
         img{
             display: block;
             width: 100%;
             height: auto;
+            transition: var(--great-transition);
         }
     }
     .header-contacts{
@@ -152,7 +183,7 @@
                 li{
                     a{
                         // font-size: 2rem;
-                        font-size: 18px;
+                        font-size: 18px !important;
                     }
                 }
             }

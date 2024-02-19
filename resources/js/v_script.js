@@ -23,6 +23,7 @@ export default function v_script(){
             headerPage.classList.toggle('show-menu');
         });
     }
+
     // подключение lightgallery
     let nlLightgalleryBox = document.querySelectorAll('.lightgallery-box');
     if(nlLightgalleryBox.length > 0){
@@ -109,5 +110,14 @@ export default function v_script(){
     }
     flyToAnchor();
 
+    // код отвечающий за скольшение шапки
+    let flyHeader = document.querySelector('#header');
+    document.addEventListener('scroll', function () {
+        if (window.pageYOffset > 3) {
+            flyHeader.classList.add('header-fly');
+        } else {
+            flyHeader.classList.remove('header-fly');
+        }
+    });
 
 }

@@ -24,11 +24,17 @@
                 <img src="{{asset('img/f-img-2.svg')}}" alt="" class="f-img-2">
                 <img src="{{asset('img/f-img-1.svg')}}" alt="" class="f-img-1">
             </div>
-            <div class="hall__phone-box">
+            {{-- <div class="hall__phone-box">
                 <a href="tel:+7{{ phone_format($options['phone']) }}" class="hall__phone">{{ $options['phone'] }}</a>
                 <a href="tel:+7{{ phone_format($options['phone2']) }}" class="hall__phone">{{ $options['phone2'] }}</a>
             </div>
-            <h1 class="page-title">Студия<br> ландшафтного дизайна</h1>
+            <h1 class="page-title">Студия<br> ландшафтного дизайна</h1> --}}
+
+            <h1 class="page-title">Добро пожаловать в студию ландшафтного дизайна «Розмарин»!</h1>
+            <p class="header_center_text">Мы очень любим свое дело, с радостью создадим для Вас уникальный красивый и функциональный сад, чтобы Вы чувствовали себя в нем уютно и комфортно.</p>
+            <p class="header_center_text">В работе мы применяем творческий, индивидуальный подход к каждому клиенту, точность расчетов и высокое качество выполнения работ.</p>
+            <p class="header_center_text">Наши ценности - честность и ответственность в работе, трудолюбие, уважение к людям и постоянное развитие в своем деле.</p>
+
             <a href="#contacts" class="btn anchor-link">Получить консультацию</a>
         </div>
         <div class="inner about-box">

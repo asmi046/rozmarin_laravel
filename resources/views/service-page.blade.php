@@ -24,8 +24,7 @@
             {!! $service_info->description !!}
 
 
-            {{-- @if (count($service_info->galery) > 0) --}}
-            @if (false)
+            @if (count($service_info->galery) > 0)
                 <!-- Slider main container -->
                 <div class="ex-slider-box">
                     <div class="swiper ex-slider">

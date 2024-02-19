@@ -38,15 +38,50 @@ class ServiceSeeder extends Seeder
         foreach ($data_element as $key => $item) {
 
             Storage::disk('public')->put("services/".$item, file_get_contents(public_path('img/services/'.$item)), 'public');
-            Storage::disk('public')->put("galery/g1.jpg", file_get_contents(public_path('img/galery/g1.jpg')), 'public');
-            Storage::disk('public')->put("galery/g2.jpg", file_get_contents(public_path('img/galery/g2.jpg')), 'public');
+
+            Storage::disk('public')->put("galery/01.webp", file_get_contents(public_path('img/galery/proj_viz/01.webp')), 'public');
+            Storage::disk('public')->put("galery/1.webp", file_get_contents(public_path('img/galery/proj_viz/1.webp')), 'public');
+            Storage::disk('public')->put("galery/2.webp", file_get_contents(public_path('img/galery/proj_viz/2.webp')), 'public');
+            Storage::disk('public')->put("galery/3.webp", file_get_contents(public_path('img/galery/proj_viz/3.webp')), 'public');
+            Storage::disk('public')->put("galery/4.webp", file_get_contents(public_path('img/galery/proj_viz/4.webp')), 'public');
+            Storage::disk('public')->put("galery/5.webp", file_get_contents(public_path('img/galery/proj_viz/5.webp')), 'public');
+            Storage::disk('public')->put("galery/6.webp", file_get_contents(public_path('img/galery/proj_viz/6.webp')), 'public');
+            Storage::disk('public')->put("galery/7.webp", file_get_contents(public_path('img/galery/proj_viz/7.webp')), 'public');
+            Storage::disk('public')->put("galery/8.webp", file_get_contents(public_path('img/galery/proj_viz/8.webp')), 'public');
+            Storage::disk('public')->put("galery/9.webp", file_get_contents(public_path('img/galery/proj_viz/9.webp')), 'public');
+            Storage::disk('public')->put("galery/10.webp", file_get_contents(public_path('img/galery/proj_viz/10.webp')), 'public');
+            Storage::disk('public')->put("galery/11.webp", file_get_contents(public_path('img/galery/proj_viz/11.webp')), 'public');
+            Storage::disk('public')->put("galery/12.webp", file_get_contents(public_path('img/galery/proj_viz/12.webp')), 'public');
+            Storage::disk('public')->put("galery/13.webp", file_get_contents(public_path('img/galery/proj_viz/13.webp')), 'public');
+
+
+            $galery = json_encode([
+            ]);
+
+            if ($key === "Проектирование и визуализация")
+                $galery = json_encode([
+                    "galery/01.webp",
+                    "galery/1.webp",
+                    "galery/2.webp",
+                    "galery/3.webp",
+                    "galery/4.webp",
+                    "galery/5.webp",
+                    "galery/6.webp",
+                    "galery/7.webp",
+                    "galery/8.webp",
+                    "galery/9.webp",
+                    "galery/10.webp",
+                    "galery/11.webp",
+                    "galery/12.webp",
+                    "galery/13.webp"
+                ]);
 
             DB::table("services")->insert(
                 [
                     'title' => $key,
                     'slug' => Str::slug($key),
                     'img' => "services/".$item,
-                    'galery' => json_encode(["galery/g2.jpg", "galery/g1.jpg"]),
+                    'galery' => $galery,
                     'description' => file_get_contents(public_path($text_element[$key])),
                     'seo_title' => $key,
                     'seo_description' => $key,

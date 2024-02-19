@@ -32,6 +32,13 @@ class OptionSeeder extends Seeder
                 ],
 
                 [
+                    "name" => "phone_bel",
+                    "type" => "plan",
+                    'title' => 'Телефон белгород',
+                    "value" => "+7 951 147 43 11",
+                ],
+
+                [
                     "name" => "email",
                     "type" => "plan",
                     'title' => 'email',

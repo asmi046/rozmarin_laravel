@@ -88,6 +88,7 @@
             <p class="subtitle">Мы оперативно ответим на любые ваши вопросы</p>
             <div class="contacts">
                 <div class="contacts__left-col">
+                    <h3>Ландшафтный дизайнер в Курске:</h3>
                     <ul class="contact-list">
                         <li>
                             <a href="tel:+7{{ phone_format($options['phone']) }}">{{ $options['phone'] }}</a>
@@ -97,6 +98,12 @@
                         </li>
                         <li>
                             <a href="mailto:{{ $options['email'] }}">{{ $options['email'] }}</a>
+                        </li>
+                    </ul>
+                    <h3>Ландшафтный дизайнер в Белгороде:</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <a href="tel:+7{{ phone_format($options['phone_bel']) }}">{{ $options['phone_bel'] }}</a>
                         </li>
                     </ul>
                     <div class="social-link-box">

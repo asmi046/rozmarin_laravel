@@ -100,7 +100,7 @@
                             <a href="mailto:{{ $options['email'] }}">{{ $options['email'] }}</a>
                         </li>
                         <li>
-                            <strong>Марина Шабанова</strong>
+                            Марина Шабанова
                         </li>
                     </ul>
                     <h3>Ландшафтный дизайнер в Белгороде:</h3>
@@ -109,7 +109,7 @@
                             <a href="tel:+7{{ phone_format($options['phone_bel']) }}">{{ $options['phone_bel'] }}</a>
                         </li>
                         <li>
-                            <strong>Анна Серикова</strong>
+                            Анна Серикова
                         </li>
                     </ul>
                     <div class="social-link-box">

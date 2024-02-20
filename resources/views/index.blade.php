@@ -37,7 +37,7 @@
 
             <a href="#contacts" class="btn anchor-link">Получить консультацию</a>
         </div>
-        <div class="inner about-box">
+        {{-- <div class="inner about-box">
             <div class="about-box__left-col">
                 <h2 class="section-title">О компании</h2>
                 <p class="subtitle">ландшафтные проекты любой сложности</p>
@@ -53,7 +53,7 @@
                     <img src="{{asset('img/ld.png')}}" alt="" class="ld-img">
                 </div>
             </div>
-        </div>
+        </div> --}}
     </section>
 
     <section class="services-section" id="services">

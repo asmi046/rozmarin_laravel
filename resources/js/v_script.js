@@ -14,7 +14,7 @@ export default function v_script(){
                 fImgBox.classList.add('start-animation');
             }, 500);
         }
-    })
+    });
 
     let burgerBtn = document.querySelector('.burger-btn');
     let headerPage = document.querySelector('#header');
@@ -83,6 +83,10 @@ export default function v_script(){
                             behavior: 'smooth',
                             block: 'start'
                           });
+                          let header = document.querySelector('#header');
+                          if(header.classList.contains('show-menu')){
+                            header.classList.remove('show-menu')
+                          }
                     }else{
                         localStorage.setItem('anchorId', res[0]);
                         document.location.href = url.replace(/#[0-9a-zA-Z]*/g, '');

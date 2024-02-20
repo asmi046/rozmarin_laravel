@@ -10,4 +10,18 @@
 
 @section('main')
 
+<div class="inner">
+    <ul class="breadcrumbs">
+        <li><a href="{{ route('home') }}">Главная</a> <i>/</i></li>
+        <li><span>Портфолио</span></li>
+    </ul>
+</div>
+
+<section class="our-work-page">
+    <div class="inner">
+        <h1>Багодарим за обращение</h1>
+        <p>Мы свяжемся с Вами в самое ближайшее время</p>
+    </div>
+</section>
+
 @endsection

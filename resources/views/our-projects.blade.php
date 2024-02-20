@@ -12,7 +12,7 @@
 @section('main')
     <div class="inner">
         <ul class="breadcrumbs">
-            <li><a href="/">Главная</a> <i>/</i></li>
+            <li><a href="{{ route('home') }}">Главная</a> <i>/</i></li>
             <li><span>Портфолио</span></li>
         </ul>
     </div>

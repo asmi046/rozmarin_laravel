@@ -42,8 +42,6 @@ class OptionsProvider extends ServiceProvider
                 "dd1" => 13
             ];
 
-            dd($mm);
-
             View::share('options', $opt);
         });
     }

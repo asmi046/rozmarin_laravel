@@ -38,6 +38,12 @@ class OptionsProvider extends ServiceProvider
                 $opt[$otion['name']] = $otion['value'];
             }
 
+            $mm = [
+                "dd1" => 13
+            ];
+
+            dd($mm);
+
             View::share('options', $opt);
         });
     }

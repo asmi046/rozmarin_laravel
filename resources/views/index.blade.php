@@ -118,8 +118,7 @@
                     </div>
                 </div>
                 <div class="contacts__right-col">
-
-                    <x-consultation-form.form></x-consultation-form.form>
+                    {{-- <x-consultation-form.form></x-consultation-form.form> --}}
                 </div>
             </div>
 

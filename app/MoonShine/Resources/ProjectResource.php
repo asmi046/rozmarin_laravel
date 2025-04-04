@@ -56,7 +56,7 @@ class ProjectResource extends ModelResource
                     ->hideOnIndex()
                     ->dir('project'),
 
-                TinyMce::make( 'Описание', 'description', fn($item) => mb_strimwidth($item->description, 0, 60, "..." )),
+                TinyMce::make( 'Описание', 'description', fn($item) => ($item->description)?mb_strimwidth($item->description, 0, 60, "..." ):""),
 
 
             ]),
@@ -70,6 +70,11 @@ class ProjectResource extends ModelResource
 
     public function rules(Model $item): array
     {
-        return [];
+        return [
+            'title' => ['required'],
+            'img' => ($item->img === null)?['required']:[],
+            'year' => ['required'],
+
+        ];
     }
 }

@@ -40,7 +40,7 @@ class ProjectResource extends ModelResource
                 Image::make("Обложка", "img")
                     ->removable()
                     ->disk('public')
-                    ->dir('project'),
+                    ->dir('oblozgka'),
 
                 Image::make("Галерея", "galery")
                     ->multiple()

@@ -173,12 +173,12 @@ class MoonShineUserResource extends ModelResource
     protected function filters(): iterable
     {
         return [
-            BelongsTo::make(
-                __('moonshine::ui.resource.role'),
-                'moonshineUserRole',
-                formatted: static fn (MoonshineUserRole $model) => $model->name,
-                resource: MoonShineUserRoleResource::class,
-            )->valuesQuery(static fn (Builder $q) => $q->select(['id', 'name'])),
+            // BelongsTo::make(
+            //     __('moonshine::ui.resource.role'),
+            //     'moonshineUserRole',
+            //     formatted: static fn (MoonshineUserRole $model) => $model->name,
+            //     resource: MoonShineUserRoleResource::class,
+            // )->valuesQuery(static fn (Builder $q) => $q->select(['id', 'name'])),
 
             Email::make('E-mail', 'email'),
         ];

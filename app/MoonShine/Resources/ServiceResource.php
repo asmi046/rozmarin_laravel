@@ -35,7 +35,7 @@ class ServiceResource extends ModelResource
             ->dir('services'),
 
             Text::make( 'Заголовок', 'title'),
-            TinyMce::make( 'Цитата', 'description', fn($item) => mb_strimwidth($item->description, 0, 60, "..." )),
+            TinyMce::make( 'Цитата', 'description', fn($item) => strip_tags(mb_strimwidth($item->description, 0, 60, "..." ))),
         ];
     }
 

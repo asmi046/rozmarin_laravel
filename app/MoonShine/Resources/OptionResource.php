@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace App\MoonShine\Resources;
 
 use App\Models\Option;
-use MoonShine\Fields\ID;
+use MoonShine\UI\Fields\ID;
 
-use MoonShine\Fields\Text;
-use MoonShine\Fields\TinyMce;
-use MoonShine\Fields\Textarea;
-use MoonShine\Decorations\Block;
-use MoonShine\Resources\ModelResource;
+use MoonShine\UI\Fields\Text;
+use MoonShine\UI\Fields\Textarea;
+use MoonShine\TinyMce\Fields\TinyMce;
 use Illuminate\Database\Eloquent\Model;
+use MoonShine\UI\Components\Layout\Box;
+use MoonShine\Laravel\Resources\ModelResource;
 
 class OptionResource extends ModelResource
 {
@@ -21,15 +21,13 @@ class OptionResource extends ModelResource
     public string $column = 'title';
 
 
-    public function fields(): array
+    public function indexFields(): array
     {
         return [
-            Block::make([
                 ID::make()->sortable(),
                 Text::make("Название", "title"),
                 Text::make("Ключ", "name"),
-                TinyMce::make("Значение", "value", fn($item) => mb_strimwidth($item->value, 0, 60, "..." ))
-            ]),
+                TinyMce::make("Значение", "value", fn($item) => strip_tags(mb_strimwidth($item->value, 0, 60, "..." )))
         ];
     }
 
@@ -41,7 +39,7 @@ class OptionResource extends ModelResource
         if ($item->type === "rich")
             $element = TinyMce::make("Значение", "value", fn($item) => mb_strimwidth($item->value, 0, 60, "..." ));
         return [
-            Block::make([
+            Box::make([
                 ID::make()->sortable(),
                 Text::make("Название", "title"),
                 Text::make("Ключ", "name"),
@@ -50,7 +48,7 @@ class OptionResource extends ModelResource
         ];
     }
 
-    public function rules(Model $item): array
+    public function rules($item): array
     {
         return [];
     }

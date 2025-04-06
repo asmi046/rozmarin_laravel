@@ -10,7 +10,9 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
-        "moonshine/moonshine": "^2.7"
+        "moonshine/moonshine": "^3.0",
+        "moonshine/ru": "^1.0",
+        "moonshine/tinymce": "^1.0"
     },
     "require-dev": {
         "asmi046/site_skelet": "*",

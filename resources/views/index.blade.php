@@ -1,10 +1,10 @@
-
 @extends('layouts.all')
 
 @php
-    $title = "Розмарин - студия ландшафтного дизайна";
-    $description = "Быстрая и качественная разработка ландшафтного проекта любой сложности, выезд на место, контроль реализации на каждом этапе.";
-    $pageTitle = "Презентация региона"
+    $title = 'Розмарин - студия ландшафтного дизайна в Курске и Белгороде';
+    $description =
+        'Быстрая и качественная разработка ландшафтного проекта любой сложности, выезд на место, контроль реализации на каждом этапе.';
+    $pageTitle = 'Презентация региона';
 
 @endphp
 
@@ -17,12 +17,12 @@
         <img src="{{asset('img/hall-decor-img.png')}}" class="hall-section__decor-img hall-section__decor-img--right" aria-hidden="true" alt=""> --}}
         <div class="inner">
             <div class="f-img-box">
-                <img src="{{asset('img/f-img-5.svg')}}" alt="" class="f-img-5">
-                <img src="{{asset('img/f-img-6.svg')}}" alt="" class="f-img-6">
-                <img src="{{asset('img/f-img-4.svg')}}" alt="" class="f-img-4">
-                <img src="{{asset('img/f-img-3.svg')}}" alt="" class="f-img-3">
-                <img src="{{asset('img/f-img-2.svg')}}" alt="" class="f-img-2">
-                <img src="{{asset('img/f-img-1.svg')}}" alt="" class="f-img-1">
+                <img src="{{ asset('img/f-img-5.svg') }}" alt="" class="f-img-5">
+                <img src="{{ asset('img/f-img-6.svg') }}" alt="" class="f-img-6">
+                <img src="{{ asset('img/f-img-4.svg') }}" alt="" class="f-img-4">
+                <img src="{{ asset('img/f-img-3.svg') }}" alt="" class="f-img-3">
+                <img src="{{ asset('img/f-img-2.svg') }}" alt="" class="f-img-2">
+                <img src="{{ asset('img/f-img-1.svg') }}" alt="" class="f-img-1">
             </div>
             {{-- <div class="hall__phone-box">
                 <a href="tel:+7{{ phone_format($options['phone']) }}" class="hall__phone">{{ $options['phone'] }}</a>
@@ -31,9 +31,12 @@
             <h1 class="page-title">Студия<br> ландшафтного дизайна</h1> --}}
 
             <h1 class="page-title">Добро пожаловать в студию ландшафтного дизайна «Розмарин»!</h1>
-            <p class="header_center_text">Мы очень любим свое дело, с радостью создадим для Вас уникальный красивый и функциональный сад, чтобы Вы чувствовали себя <br>в нем уютно и комфортно.</p>
-            <p class="header_center_text">В работе мы применяем творческий, индивидуальный подход к каждому клиенту, точность расчетов и высокое качество выполнения работ.</p>
-            <p class="header_center_text">Наши ценности - честность и ответственность в работе, трудолюбие, уважение к людям и постоянное развитие в своем деле.</p>
+            <p class="header_center_text">Мы очень любим свое дело, с радостью создадим для Вас уникальный красивый и
+                функциональный сад, чтобы Вы чувствовали себя <br>в нем уютно и комфортно.</p>
+            <p class="header_center_text">В работе мы применяем творческий, индивидуальный подход к каждому клиенту,
+                точность расчетов и высокое качество выполнения работ.</p>
+            <p class="header_center_text">Наши ценности - честность и ответственность в работе, трудолюбие, уважение к людям
+                и постоянное развитие в своем деле.</p>
 
             <a href="#contacts" class="btn anchor-link">Получить консультацию</a>
         </div>
@@ -79,7 +82,7 @@
                     <x-project.card :item="$item"></x-project.card>
                 @endforeach
             </div>
-            <a href="{{route('projects')}}" class="btn">Смотреть все примеры работ</a>
+            <a href="{{ route('projects') }}" class="btn">Смотреть все примеры работ</a>
         </div>
     </section>
     <section class="contact-section" id="contacts">
